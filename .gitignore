@@ -1,0 +1,8 @@
+# PHP CS Fixer writes its cache here; it is machine-local, never committed.
+.php-cs-fixer.cache
+
+# Release tooling and its output, deliberately not published.
+/release.sh
+/dist/
+/vendor/
+/composer.lock

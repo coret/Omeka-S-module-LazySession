@@ -1,0 +1,24 @@
+# English (identity) catalogue for the Omeka S module LazySession.
+# Copyright (C) 2026 Bob Coret
+# This file is distributed under the same license as the LazySession module.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LazySession 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/coret/Omeka-S-module-LazySession/issues\n"
+"POT-Creation-Date: 2026-11-08 15:00+0100\n"
+"PO-Revision-Date: 2026-11-08 15:00+0100\n"
+"Last-Translator: Bob Coret\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: config/module.ini:4
+msgid "LazySession"
+msgstr "LazySession"
+
+#: config/module.ini:5
+msgid "Keeps anonymous visitors out of the session table. Their session data travels in an encrypted cookie instead, so crawlers that ignore cookies leave nothing behind, while forms with CSRF protection keep working. Logged-in users keep a normal server-side session."
+msgstr "Keeps anonymous visitors out of the session table. Their session data travels in an encrypted cookie instead, so crawlers that ignore cookies leave nothing behind, while forms with CSRF protection keep working. Logged-in users keep a normal server-side session."

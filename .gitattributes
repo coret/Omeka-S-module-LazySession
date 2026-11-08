@@ -1,0 +1,33 @@
+# Keeps development files out of the release archive.
+#
+# `git archive` honours export-ignore, so the zip built by the documented
+# command in omeka.org/s/docs/developer/register_an_addon/ --
+#
+#     git archive --output=LazySession.zip --prefix=LazySession/ <tag>
+#
+# -- contains only what a site needs to run the module. release.sh builds from
+# `git archive` too, so both routes produce the same tree.
+#
+# Only .mo files ship: Omeka's translator reads the compiled catalogues, and
+# the .po/.pot sources are for translators working in the repository.
+
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/.php-cs-fixer.dist.php export-ignore
+# Directories without a trailing slash: an attribute pattern ending in a
+# slash matches nothing, and /dir/** would leave the empty directory behind.
+/.tx                export-ignore
+/test               export-ignore
+/language/*.po      export-ignore
+/language/*.pot     export-ignore
+/language/README.md export-ignore
+
+# Normalise line endings in the repository.
+*.php    text
+*.md     text
+*.ini    text
+*.po     text eol=lf
+*.pot    text eol=lf
+
+# Compiled catalogues are binary as far as git is concerned.
+*.mo     binary

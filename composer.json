@@ -1,0 +1,42 @@
+{
+    "name": "coret/omeka-s-module-lazysession",
+    "type": "library",
+    "description": "Omeka S module that keeps anonymous visitors out of the session table by carrying their session data in an encrypted cookie.",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Bob Coret",
+            "homepage": "https://github.com/coret"
+        }
+    ],
+    "homepage": "https://github.com/coret/Omeka-S-module-LazySession",
+    "support": {
+        "issues": "https://github.com/coret/Omeka-S-module-LazySession/issues",
+        "forum": "https://forum.omeka.org/"
+    },
+    "keywords": [
+        "Omeka S",
+        "Omeka S module",
+        "session",
+        "bots",
+        "performance"
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-sodium": "*",
+        "ext-zlib": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LazySession\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    }
+}
